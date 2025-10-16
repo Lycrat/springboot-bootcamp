@@ -20,14 +20,14 @@ public class Person {
     @Size(min=2, max=30)
     private String lastname;
 
-    public Person(int age, String firstname, String lastname) {
+    public Person(String firstname, String lastname, int age) {
         this.age = age;
         this.firstname = firstname;
         this.lastname = lastname;
     }
 
     public Person() {
-        this(18, "Unknown firstname", "Unknown lastname");
+        this("Unknown firstname", "Unknown lastname", 26);
     }
 
     public String getLastname() {
