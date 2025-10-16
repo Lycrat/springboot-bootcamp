@@ -35,4 +35,9 @@ public class PersonController {
         return this.people.get(id.intValue());
     }
 
+    @DeleteMapping("/delete/{id}")
+    public Person deletePerson(@PathVariable Long id){
+       return this.people.remove(id.intValue());
+    }
+
 }
