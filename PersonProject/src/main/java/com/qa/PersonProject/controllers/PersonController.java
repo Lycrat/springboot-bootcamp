@@ -13,7 +13,6 @@ import java.util.List;
 public class PersonController {
 
     private PersonService personService;
-    private List<Person> people = new ArrayList<>();
 
     public PersonController(PersonService personService) {
         super();
